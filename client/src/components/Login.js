@@ -28,13 +28,13 @@ const Login = (props) => {
 // make a post request to retrieve a token from the api
 	// when you have handled the token, navigate to the BubblePage route
 	return (
-		<div>
+		<div className='loginForm'>
 			<form onSubmit={handleSubmit}>
+        <h2>Color App</h2>
 				<input type="text" name="username"
 				value={userInput.username} onChange={handleChange} />
 				<input type="password" name="password"
 				value={userInput.password} onChange={handleChange} />
-				<input type="submit" />
 				<button>Login</button>
 			</form>
 
